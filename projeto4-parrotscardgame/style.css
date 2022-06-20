@@ -73,13 +73,16 @@ body{
 .card:hover{
     box-shadow: 0 0 10px rgb(248, 245, 245);
 }
+.face.flipped.match{
+    box-shadow: 0 0 10px rgb(144, 201, 166);
+}
 
 #modalGameOver{
     position: absolute;
     top: 0px;
     width: 100%;
     height: 100%;
-    z-index: -5;
+    z-index: -2;
 
 }
 
@@ -100,4 +103,13 @@ body{
     line-height: 66px;
     letter-spacing: -0.004em;
 
+}
+
+#imgMatchSign{
+    position: relative;
+    top: 200px;
+    transition-property: top, opacity;
+    transition-duration: 1.5s;
+    opacity: 1;
+    z-index: -1;
 }
